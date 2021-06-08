@@ -1,0 +1,46 @@
+﻿@model AddAgreementsViewModel
+
+<div class="modal fade" id="AddAgreementModal" role="dialog" aria-labelledby="porLabel">
+    <div class="modal-dialog" role="document" style="width:30%;">
+        <div class="modal-content">
+            <div class="modal-header" style="margin-bottom:0px;">
+                <h4><mark id="">Add agreement</mark></h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="float:right;">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+
+            </div>
+            <form class="modal-body AddAgreementBody" id="AddEditAgreementModal" method="post" action="/Agreements/AddAgreement">
+                <input hidden name="agreementId" id="agreementId" />
+
+                <label for="inGroup" style="margin:10px 0px 10px 0px;font-size: 12px;">Group:</label>
+                <select name="ProductGroup" required id="inGroup" asp-for="ProductGroupList.FirstOrDefault().Id"
+                        asp-items="@(new SelectList(Model.ProductGroupList,"Id","GroupDescription"))">
+                    <option value="0">Please select group</option>
+                </select>
+
+                <label for="inProduct" style="margin:10px 0px 10px 0px;font-size: 12px;">Product:</label>
+                <select name="Product" required id="inProduct" asp-for="ProductList.FirstOrDefault().Id"
+                        asp-items="@(new SelectList(Model.ProductList,"Id","ProductDescription"))">
+                    <option value="0">Please select product</option>
+                </select>
+
+                <label for="inEffectiveDate" style="margin:10px 0px 10px 0px;font-size: 12px;">Effective date:</label>
+                <input name="EffectiveDate" required type="date" id="inEffectiveDate" />
+                <label for="inExpirationDate" style="margin:10px 0px 10px 0px;font-size: 12px;">Expiration date:</label>
+                <input name="ExpirationDate" required type="date" id="inExpirationDate" />
+                <label for="inNewPrice" style="margin:10px 0px 10px 0px;font-size: 12px;">New price:</label>
+                <input name="NewPrice" required type="number" min="1" id="inNewPrice" />
+                <label for="inActive" style="margin:10px 0px 10px 0px;font-size: 12px;">Active:</label>
+                <input name="Active" type="checkbox" id="inActive" />
+                <div style="min-width: 100%; flex:1;">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" style="flex:1; float:right; max-width:100px; margin:10px;">Close</button>
+                    <input type="submit" class="btn btn-primary" style="float:right; margin:10px;" value="Save" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+

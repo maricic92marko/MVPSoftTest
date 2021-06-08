@@ -1,0 +1,28 @@
+﻿@model AddAgreementsViewModel
+
+
+<button style="cursor:pointer;" onclick="ToggleAddAgreement()">New Agreement</button>
+
+<form style="display:flex; flex-direction:row; margin:10px;"   onchange="AgreementsTable_FN()">
+    <label for="schGroup" style="margin:10px;font-size: 12px;">Group:</label>
+    <select name="ProductGroup"  id="schGroup" asp-for="ProductGroupList.FirstOrDefault().Id"
+            asp-items="@(new SelectList(Model.ProductGroupList,"Id","GroupDescription"))">
+        <option value="0"></option>
+    </select>
+
+    <label for="schProduct" style="margin:10px;font-size: 12px;">Product:</label>
+    <select name="Product"  id="schProduct" asp-for="ProductList.FirstOrDefault().Id"
+            asp-items="@(new SelectList(Model.ProductList,"Id","ProductDescription"))">
+        <option value="0"></option>
+    </select>
+    <label for="schUsers" style="margin:10px;font-size: 12px;">Users:</label>
+    <select name="User"  id="schUsers" asp-for="UsersList.FirstOrDefault().Id"
+            asp-items="@(new SelectList(Model.UsersList,"Id","UserName"))">
+        <option value="">Please select user</option>
+    </select>
+</form>
+<div id="AgreementsTableContainer">
+    <table id="AgreementsTable" class="display" style="width:100%">
+    </table>
+</div>
+@await Html.PartialAsync("~/Views/Shared/_AddAgreement.cshtml", Model)
