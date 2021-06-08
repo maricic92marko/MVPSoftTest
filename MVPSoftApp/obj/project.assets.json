@@ -6147,11 +6147,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Marko\\source\\repos\\MVPSoftApp\\MVPSoftApp\\MVPSoftApp.csproj",
+      "projectUniqueName": "C:\\Users\\Marko\\Documents\\GitHub\\MVPSoftTest\\MVPSoftTest\\MVPSoftApp\\MVPSoftApp.csproj",
       "projectName": "MVPSoftApp",
-      "projectPath": "C:\\Users\\Marko\\source\\repos\\MVPSoftApp\\MVPSoftApp\\MVPSoftApp.csproj",
+      "projectPath": "C:\\Users\\Marko\\Documents\\GitHub\\MVPSoftTest\\MVPSoftTest\\MVPSoftApp\\MVPSoftApp.csproj",
       "packagesPath": "C:\\Users\\Marko\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Marko\\source\\repos\\MVPSoftApp\\MVPSoftApp\\obj\\",
+      "outputPath": "C:\\Users\\Marko\\Documents\\GitHub\\MVPSoftTest\\MVPSoftTest\\MVPSoftApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

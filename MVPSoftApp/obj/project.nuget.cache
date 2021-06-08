@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "t8rYRyV0CKMYLkjOg1MmJ03jJ764fU8jQjeXq1PX/0S/P3J4KIDoRdbZrN1tdDxsRNtQXnLIpFOWf7jvqVXT7Q==",
+  "dgSpecHash": "F9LogpwOG39efU6WFOi8EzBkE2l2NjjtXDC+gJopKaIwcfpMjuhJLTHnODp0Sxo2YP8goZnVLle/xD8Hf0tyDw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Marko\\source\\repos\\MVPSoftApp\\MVPSoftApp\\MVPSoftApp.csproj",
+  "projectFilePath": "C:\\Users\\Marko\\Documents\\GitHub\\MVPSoftTest\\MVPSoftTest\\MVPSoftApp\\MVPSoftApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Marko\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Marko\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.4\\microsoft.aspnetcore.cryptography.internal.5.0.4.nupkg.sha512",
